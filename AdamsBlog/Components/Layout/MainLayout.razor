@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
-<MudThemeProvider Theme="@_theme" IsDarkMode="_isDarkMode" />
+<MudThemeProvider Theme="AdamsBlogTheme" IsDarkMode="_isDarkMode" />
 <MudPopoverProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
@@ -97,6 +97,79 @@
     {
         true => Icons.Material.Rounded.AutoMode,
         false => Icons.Material.Outlined.DarkMode,
+    };
+
+    MudTheme AdamsBlogTheme = new MudTheme()
+    {
+        PaletteLight = new PaletteLight()
+        {
+            Primary = "#298c29",
+            Surface = "#ffffff",
+            Background = "#ffffff",
+            BackgroundGray = "#f0f0f0",
+            AppbarText = "#121212",
+            AppbarBackground = "#a6cc9e",
+            DrawerBackground = "#f0f0f0",
+            ActionDefault = "#74718e",
+            ActionDisabled = "#9999994d",
+            ActionDisabledBackground = "#605f6d4d",
+            TextPrimary = "#121212",
+            TextSecondary = "#282828",
+            TextDisabled = "#ffffff33",
+            DrawerIcon = "#298c29",
+            DrawerText = "#121212",
+            GrayLight = "#2a2833",
+            GrayLighter = "#1e1e2d",
+            Info = "#21498a",
+            Success = "#22946e",
+            Warning = "#a87a2a",
+            Error = "#9c2121",
+            LinesDefault = "#000000",
+            TableLines = "#000000",
+            Divider = "#717171",
+            OverlayLight = "#f0f0f0",
+        },
+        PaletteDark = new PaletteDark()
+        {
+            Primary = "#298c29",
+            Surface = "#121212",
+            Background = "#121212",
+            BackgroundGray = "#3f3f3f",
+            AppbarText = "#489941",
+            AppbarBackground = "#282828",
+            DrawerBackground = "#282828",
+            ActionDefault = "#74718e",
+            ActionDisabled = "#9999994d",
+            ActionDisabledBackground = "#605f6d4d",
+            TextPrimary = "#61a659",
+            TextSecondary = "#78b270",
+            TextDisabled = "#ffffff33",
+            DrawerIcon = "#717171",
+            DrawerText = "#489941",
+            GrayLight = "#2a2833",
+            GrayLighter = "#1e1e2d",
+            Info = "#92b2e5",
+            Success = "#22946e",
+            Warning = "#a87a2a",
+            Error = "#9c2121",
+            LinesDefault = "#717171",
+            TableLines = "#717171",
+            Divider = "#717171",
+            OverlayLight = "#1e1e2d80",
+        },
+
+        LayoutProperties = new LayoutProperties()
+        {
+            DrawerWidthLeft = "260px",
+            DrawerWidthRight = "300px"
+        },
+        Typography = new Typography()
+        {
+            Default = new DefaultTypography()
+            {
+                FontFamily = new[] { "Space Mono", "Poppins", "Helvetica", "Arial", "sans-serif" }
+            }
+        }
     };
 }
 

@@ -1,0 +1,112 @@
+/** Base colors */
+--clr-dark-a0: #000000;
+--clr-light-a0: #ffffff;
+
+/** Theme primary colors */
+--clr-primary-a0: #298c29;
+--clr-primary-a10: #489941;
+--clr-primary-a20: #61a659;
+--clr-primary-a30: #78b270;
+--clr-primary-a40: #8fbf87;
+--clr-primary-a50: #a6cc9e;
+
+/** Theme surface colors */
+--clr-surface-a0: #121212;
+--clr-surface-a10: #282828;
+--clr-surface-a20: #3f3f3f;
+--clr-surface-a30: #575757;
+--clr-surface-a40: #717171;
+--clr-surface-a50: #8b8b8b;
+
+/** Theme tonal surface colors */
+--clr-surface-tonal-a0: #171d16;
+--clr-surface-tonal-a10: #2c322b;
+--clr-surface-tonal-a20: #434842;
+--clr-surface-tonal-a30: #5b605a;
+--clr-surface-tonal-a40: #747873;
+--clr-surface-tonal-a50: #8e918d;
+
+/** Success colors */
+--clr-success-a0: #22946e;
+--clr-success-a10: #47d5a6;
+--clr-success-a20: #9ae8ce;
+
+/** Warning colors */
+--clr-warning-a0: #a87a2a;
+--clr-warning-a10: #d7ac61;
+--clr-warning-a20: #ecd7b2;
+
+/** Danger colors */
+--clr-danger-a0: #9c2121;
+--clr-danger-a10: #d94a4a;
+--clr-danger-a20: #eb9e9e;
+
+/** Info colors */
+--clr-info-a0: #21498a;
+--clr-info-a10: #4077d1;
+--clr-info-a20: #92b2e5;
+
+/** Examples */
+.bg-primary {
+ color: var(--clr-primary-a50);
+ background-color: var(--clr-surface-a0);
+}
+
+
+
+/** LIGHT THEME */
+
+
+/** Base colors */
+--clr-dark-a0: #000000;
+--clr-light-a0: #ffffff;
+
+/** Theme primary colors */
+--clr-primary-a0: #298c29;
+--clr-primary-a10: #277c26;
+--clr-primary-a20: #256b23;
+--clr-primary-a30: #225c20;
+--clr-primary-a40: #1f4c1c;
+--clr-primary-a50: #1c3e19;
+
+/** Theme surface colors */
+--clr-surface-a0: #ffffff;
+--clr-surface-a10: #f0f0f0;
+--clr-surface-a20: #e1e1e1;
+--clr-surface-a30: #d3d3d3;
+--clr-surface-a40: #c5c5c5;
+--clr-surface-a50: #b6b6b6;
+
+/** Theme tonal surface colors */
+--clr-surface-tonal-a0: #ebf3e9;
+--clr-surface-tonal-a10: #dfe6dd;
+--clr-surface-tonal-a20: #d2d8d1;
+--clr-surface-tonal-a30: #c6cbc5;
+--clr-surface-tonal-a40: #babeb9;
+--clr-surface-tonal-a50: #aeb1ad;
+
+/** Success colors */
+--clr-success-a0: #1b7f5c;
+--clr-success-a10: #28be8a;
+--clr-success-a20: #58dbad;
+
+/** Warning colors */
+--clr-warning-a0: #b8871f;
+--clr-warning-a10: #dfae44;
+--clr-warning-a20: #ebca85;
+
+/** Danger colors */
+--clr-danger-a0: #b13535;
+--clr-danger-a10: #d06262;
+--clr-danger-a20: #e29d9d;
+
+/** Info colors */
+--clr-info-a0: #1e56a3;
+--clr-info-a10: #347ada;
+--clr-info-a20: #74a4e6;
+
+/** Examples */
+.bg-primary {
+ color: var(--clr-primary-a50);
+ background-color: var(--clr-surface-a0);
+}
