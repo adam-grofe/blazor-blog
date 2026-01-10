@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
-<MudThemeProvider Theme="AdamsBlogTheme" IsDarkMode="_isDarkMode" />
+<MudThemeProvider @ref="_mudThemeProvider" Theme="AdamsBlogTheme" IsDarkMode="_isDarkMode" />
 <MudPopoverProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
@@ -28,9 +28,19 @@
 </div>
 
 @code {
+    private MudThemeProvider _mudThemeProvider;
     private bool _drawerOpen = true;
-    private bool _isDarkMode = true;
+    private bool _isDarkMode;
     private MudTheme? _theme = null;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _isDarkMode = await _mudThemeProvider.GetSystemDarkModeAsync();
+            StateHasChanged();
+        }
+    }
 
     protected override void OnInitialized()
     {
